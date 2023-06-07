@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Progress Bar -->
+    <script src="JS/progressbar.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <title>teste</title>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container"></div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a href="#" class="navbar-brand">
+            <img id="logo" src="/CSS/img/logo.png" alt="advogado">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+            aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation"> 
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home-menu">Home</a>
+                    <a class="nav-item nav-link" id="about-menu">Sobre</a>
+                    <a class="nav-item nav-link" id="services-menu">Serviços</a>
+                    <a class="nav-item nav-link" id="portfolio-menu">Experiência</a>
+                    <a class="nav-item nav-link" id="contact-menu">Contato</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#mainSlider" data-slide-to="1"></li>
+                    <li data-target="#mainSlider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/CSS/img/carousel.webp" class="d-block w-100" alt="advogado criminalista">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Deseja saber mais sobre seus direitos?</h2>
+                            <p>Então não deixe de entrar em contato e realize sua consulta</p>
+                            <a href="#" class="main-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/CSS/img/carousel2.jpg" class="d-block w-100" alt="dúvidas criminalista">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Quer tirar quaisquer dúvidas?</h2>
+                            <p>Nossa equipe está a sua total disposição</p>
+                            <a href="#" class="main-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/CSS/img/carousel3.webp" class="d-block w-100" alt="contato online">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Faça sua consulta 100% online</h2>
+                            <p>Nosso atendimento online é realizado pensando no seu total conforto</p>
+                            <a href="#" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                  <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div id="whatsapp2">
+                <a href="https://wa.me/5543998068708">
+                    <i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
+                </a>
+            </div>
+            <!--sobre a empresa-->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre a hDc Agency</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="/CSS/img/logo.png" alt="perfil">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title"> Uma agência que pensa no futuro</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt ad quos totam eaque soluta obcaecati magnam. Labore minima quasi eius recusandae, quis veniam sequi, eos ipsa architecto ullam saepe facilis?</p>
+                            <p>Veja nossos diferenciais:</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> Utilização de machine learning;</li>
+                                <li><i class="fas fa-check"></i> Layout responsivo para todos dispositivos;</li>
+                                <li><i class="fas fa-check"></i> Integração com diversos sitemas do mercado;</li>
+                                <li><i class="fas fa-check"></i> Desenvolvimento com metodologia ágil;</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--serviços da empresa-->
+            <div class="services-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title"> Serviços da empresa</h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos nativos</h4>
+                            <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos nativos</h4>
+                            <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos nativos</h4>
+                            <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos nativos</h4>
+                            <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos nativos</h4>
+                            <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos nativos</h4>
+                            <p>Utilizamos o real poder dos dispositivos móveis construindo aplicativos nativos.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--contabilizador-->
+            <div id="data-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 circle-box">
+                            <div id="circleA"></div>
+                                <p>projetos entregues</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleB"></div>
+                                <p>clientes felizes</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleC"></div>
+                                <p>colaboradores</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleD"></div>
+                                <p>cafezinhos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--colaboradores-->
+            <div id="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nosso time</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/CSS/img/pessoa1.webp" class="card-img-top" alt="Imagem de Perfil 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">João</h5>
+                                    <p class="card-text">Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/CSS/img/pessoa2.jpeg" class="card-img-top" alt="Imagem de Perfil 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Maria</h5>
+                                    <p class="card-text">Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/CSS/img/pessoa3.webp" class="card-img-top" alt="Imagem de Perfil 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">José</h5>
+                                    <p class="card-text">Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="/CSS/img/pessoa4.jpeg" class="card-img-top" alt="Imagem de Perfil 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rafaela</h5>
+                                    <p class="card-text">SEO consultant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--experiências-->
+            <div id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="company-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <h4>Gosta de desafios?</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente pariatur sit velit commodi libero impedit perferendis officiis in consequuntur. Officia inventore reiciendis magnam, numquam rem dicta ratione ipsum! Adipisci, corporis!</p>
+                            <a href="#" class="main-btn" id="apply-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--serviços-->
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça nossos projetos</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="dev-btn">Desenvolvimento</button>
+              <button class="main-btn filter-btn" id="dsg-btn">Design</button>
+              <button class="main-btn filter-btn" id="seo-btn">SEO</button>
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="CSS/img/logo.png" class="img-fluid" alt="Projeto 1">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="CSS/img/logo.png" class="img-fluid" alt="Projeto 2">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="CSS/img/logo.png" class="img-fluid" alt="Projeto 3">
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="CSS/img/logo.png" class="img-fluid" alt="Projeto 4">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="CSS/img/logo.png" class="img-fluid" alt="Projeto 5">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="CSS/img/logo.png" class="img-fluid" alt="Projeto 6">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="news-area">
+        <div class="container">
+            <div class="col-md-12">
+                <h3 class="main-title">Fique dentro das novidades</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut unde velit atque eligendi consequuntur quod ipsam? Explicabo blanditiis facilis ad, dolore repudiandae aperiam incidunt soluta architecto dignissimos? Ullam, obcaecati id!</p>
+                <form action="">
+                    <input type="email" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+                    <input type="submit" id="news-btn" value="Inscrever">
+                </form>
+            </div>
+        </div>
+        <!--Call to action-->
+        <div id="call-area">
+            <div class="container">
+                <div class="row">
+                    <p>Deseja fazer um orçamento sem compromisso?</p>
+                    <button class="main-btn" id="call-btn">Orçar</button>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span> (99)99999-9999</p>
+                        <p><span class="contact-title">Atendimento:</span> 08:00 - 19:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie e-mail para:</span> mjsa.sanches25@gmail.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">venha tomar um café:</span> Rua Lorem - 1200</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Ou nos deixe uma mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <input type="email" class="form-control" placeholder="E-mail" name="email">
+                        <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                        <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                        <input type="submit" class="main-btn" value="Enviar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://matheusariza.com/" target="_blank">Matheus Ariza</a> &copy; 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+</body>
+</html>
