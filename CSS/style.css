@@ -17,14 +17,22 @@ p, li{
 
 /* Barra de navegação*/
 header, .navbar{
-    background-color: #353d41;
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(36,123,160,1) 50%, rgba(19,41,61,1) 100%);
+    padding: 0;
 }
 #nav-container{
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 #logo{
-    width: 75px;
+    width: 100px;
+    margin-left: 40px;
+    padding-top: 5px;
+    transition: all .5s ease-in-out;
+}
+#logo:hover{
+    transform: scale(1.1);
 }
 .navbar-brand{
     padding: 0;
@@ -37,8 +45,11 @@ header, .navbar{
     color: aliceblue;
     text-decoration: none;
 }
+.navbar-nav{
+    margin-right: 40px;
+}
 #navbar-links a:hover{
-    color: rgb(0, 148, 148);
+    color: rgb(3, 174, 174);
     cursor: pointer;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -51,41 +62,44 @@ header, .navbar{
     padding: 0;
 }
 #mainSlider .carousel-inner, #mainSlider .carousel-item{
-    height: 90vh;
+    height: 100vh;
 }
 #mainSlider .carousel-caption{
-    top: 30%;
+    top: 40%;
 }
 #mainSlider .carousel-caption h2{
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.29);
 }
 #mainSlider .carousel-caption p{
     font-size: 22px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-weight: 400;
     color: aliceblue;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.295);
 }
 .main-btn{
-    background-color: rgb(0, 148, 148);
     color: aliceblue;
     text-transform: uppercase;
     width: 200px;
     height: 60px;
     border-radius: 30px;
     padding: 10px 20px;
-    border: 3px solid transparent;
+    border: 1px solid #247ba0;
     transition: .5s;
     font-weight: bold;
+    background-color: #247ba0;
 }
 .main-btn:hover{
     text-decoration: none;
-    color: rgb(0, 148, 148);
-    background-color: rgba(240, 248, 255, 0.751);
-    border-color:rgb(0, 148, 148);
+    border: 1px solid transparent;
+    color: aliceblue;
+    border-color: black;
 }
 .carousel-indicators .active{
-    background-color:rgb(0, 148, 148);
+    background-color:#247ba0;
+    margin-bottom: 30px;
 }
 #whatsapp2{
     position: fixed;
@@ -118,15 +132,24 @@ header, .navbar{
 #about-area{
     background-color: aliceblue;
 }
+#about-area img{
+    height: 70vh;
+    margin-left: 80px;
+    border-radius: 10%;
+    transition: all .5s ease-in-out;
+}
+#about-area img:hover{
+transform: scale(1.1);
+}
 .main-title{
-    color: #353d41;
+    color: #247ba0;
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
 }
 .main-title::after{
     content: "";
-    border-top: 2px solid #353d41;
+    border-top: 2px solid #247ba0;
     position: absolute;
     top: 60px;
     left: 42.5%;
@@ -134,7 +157,7 @@ header, .navbar{
 }
 .about-title{
     font-size: 17px;
-    color: #353d41;
+    color: #247ba0;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -146,7 +169,7 @@ header, .navbar{
     line-height: 30px;
 }
 #about-list i{
-    color: rgb(0, 148, 148);
+    color: #247ba0;
     margin-right: 15px;
 }
 /* serviços */
@@ -167,7 +190,7 @@ header, .navbar{
     margin-bottom: 20px;
 }
 .service-box:hover > i, .service-box:hover > h4{
-    color: rgb(0, 148, 148);
+    color: #247ba0;
     transform: scale(1.1);
 }
 
@@ -186,10 +209,10 @@ header, .navbar{
     margin-top: 20px;
 }
 
-/* time */
-
+/* experiências anteriores */
 .card-body{
     text-align: center;
+    color: #247ba0;
 }
 .card img{
     transition: all .4s ease-in-out;
@@ -198,56 +221,9 @@ header, .navbar{
     transform: scale(.9);
 }
 
-/* experiências */
+/* citação */
 
-#apply-area{
-    height: 500px;
-}
-
-#apply-area .container-fluid, #apply-area .row{
-    height: 100%;
-}
-
-#apply-area .apply-box{
-    text-align: center;
-    padding: 70px 50px
-}
-
-#company-img{
-    background-image: url('/CSS/img/pattern.webp');
-    background-size: cover;
-    height: 100%;
-}
-
-#pattern-img h4, #patter-img p{
-    color:rgb(0, 148, 148);
-}
-
-#pattern-img h4{
-    margin-top: 8%;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-#pattern-img p{
-    margin-bottom: 20px;
-}
-#apply-btn{
-    display: block;
-    height: auto;
-    width: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    background-color: transparent;
-    border-color: rgb(0, 148, 148);
-    color: rgb(0, 148, 148);
-    font-weight: bold;
-}
-#apply-btn:hover{
-    background-color: rgb(0, 148, 148);
-    color: aliceblue;
-}
-/*serviços*/
+/*portfolio*/
 
 .project-box{
     margin-bottom: 30px;
@@ -270,13 +246,18 @@ header, .navbar{
 }
 #portfolio-area .filter-btn.active, #portfolio-area .filter-btn:hover{
     color: aliceblue;
-    background-color: aqua;
-    border-color: aqua;
+    background-color: #247ba0;
+    border-color: #247ba0;
 }
 #portfolio-area img{
-    width: 370px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     margin: 5px;
+    transition: all .5s ease-in-out;
+}
+#portfolio-area img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 /* news letter */
@@ -294,36 +275,36 @@ header, .navbar{
     border-radius: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 1px solid aqua;
+    border: 1px solid #247ba0;
     display: inline;
     box-sizing: border-box;
-    width: 40%;
+    max-width: 40%;
     height: 40px;
 }
 
 #news-btn{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 1px solid aqua;
-    background-color: aqua;
+    border: 1px solid #247ba0;
+    background-color: #247ba0;
     text-transform: uppercase;
     color: aliceblue;
     height: 40px;
     padding: 0 30px;
-    margin-left: -130px;
+    margin-left: -80px;
     position: absolute;
     transition: all .5s ease-in-out;
 }
 
 #news-btn:hover{
     background-color: aliceblue;
-    color: aqua;
+    color: #247ba0;
 }
 
 /* call action */
 
 #call-area{
-    background-color: aqua;
+    background-color: #247ba0;
     text-transform: uppercase;
 }
 #call-area .row{
@@ -346,12 +327,13 @@ header, .navbar{
 
 #call-area #call-btn{
     background-color: aliceblue;
-    color: aqua;
+    color: #247ba0;
     font-weight: bold;
     font-size: 20px;
     margin-left: 30px;
     width: auto;
     letter-spacing: 2px;
+    max-width: 20%;
 }
 #call-area .container{
     padding: 40px 100px;
@@ -365,7 +347,7 @@ header, .navbar{
 .contact-box{
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid aqua;
+    border-bottom: 1px solid #247ba0;
 }
 
 .contact-box i{
@@ -380,9 +362,9 @@ header, .navbar{
     transition: all .5s ease-in-out;
 }
 .contact-box i:hover{
-    color: aqua;
+    color: #247ba0;
     transform: scale(1.1);
-    border-color: aqua;
+    border-color: #247ba0;
 }
 .contact-box p{
     font-size: 16px;
@@ -390,7 +372,7 @@ header, .navbar{
 
 .contact-title{
     font-weight: bold;
-    color: aqua;
+    color: #247ba0;
 }
 #msg-box p{
     font-size: 22px;
@@ -405,11 +387,11 @@ header, .navbar{
     height: 50px;
 }
 #contact-form .main-btn:hover{
-    color: aqua;
+    color: aliceblue;
 }
 
 #copy-area{
-    background-color: #f1f1f1;
+    background-color: aliceblue;
 }
 #copy-area .container{
     padding: 10px 0;
@@ -423,7 +405,7 @@ header, .navbar{
     color: #353d41
 }
 #copy-area .container a:hover{
-    color: aqua;
+    color: #247ba0;
     text-decoration: none;
 }
 
@@ -436,6 +418,13 @@ header, .navbar{
     }
     nav{
         text-align: center;
+    }
+    .navbar-nav{
+        margin-right: 10%;
+    }
+    .navbar-toggler{
+        padding-right: 40px;
+        border: none;
     }
      /* slider */
     #mainSlider .carousel-inner, #mainSlider .carousel-item{
@@ -453,6 +442,26 @@ header, .navbar{
         right: 10%;
     }
     /* about area*/
+    #about-area p{
+        text-align: justify;
+    }
+    #about-area img{
+        margin: 0;
+        height: auto;
+        border-radius: 0;
+    }
+    #about-area img:hover{
+        transform: none;
+    }
+    #about-list li{
+        padding-top: 10px;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+    }
+    #about-area i{
+        margin: 8px;
+    }
     /* data*/
     .circle-box div{
         padding: 0 10px;
@@ -463,6 +472,7 @@ header, .navbar{
     /*team*/
     .card-title{
         font-size: 14px;
+        height: 3vh;
     }
     .card-text{
         font-size: 12px;
@@ -502,8 +512,13 @@ header, .navbar{
     .container{
         padding: 20px 0;
     }
-    nav{
+    .navbar-nav a{
         text-align: center;
+        margin-left: 10%;
+    }
+    .navbar-toggler{
+        padding-right: 40px;
+        border: none;
     }
      /* slider */
     #mainSlider .carousel-inner, #mainSlider .carousel-item{
@@ -521,6 +536,26 @@ header, .navbar{
         right: 10%;
     }
     /* about area*/
+    #about-area p{
+        text-align: justify;
+    }
+    #about-area img{
+        margin: 0;
+        height: auto;
+        border-radius: 0;
+    }
+    #about-area img:hover{
+        transform: none;
+    }
+    #about-list li{
+        padding-top: 10px;
+        font-size: 14px;
+        text-align: justify;
+        line-height: 20px;
+    }
+    #about-area i{
+        margin: 8px;
+    }
     /* data*/
     .circle-box div{
         padding: 0 10px;
@@ -531,6 +566,7 @@ header, .navbar{
     /*team*/
     .card-title{
         font-size: 14px;
+        height: 3vh;
     }
     .card-text{
         font-size: 12px;
@@ -565,8 +601,15 @@ header, .navbar{
         font-size: 16px;
     }
 }
-@media(max-width: 439px){
+@media(max-width: 429px){
     /*slider*/
+    .navbar-nav{
+        margin-left: -40px;
+    }
+    .navbar-toggler{
+        padding-right: 40px;
+        border: none;
+    }
     #mainSlider{
         margin-top: 90px;
     }
@@ -624,22 +667,6 @@ header, .navbar{
         margin-left: -3px;
         padding: 0px 10px;
     }
-    /* news */
-    #news-area .main-title{
-        font-size: 28px;
-    }
-    #news-area p{
-        font-size: 16px;
-    }
-    #email-input{
-        width: 80%;
-    }
-    #call-area p, #call-area #call-btn{
-        font-size: 14px;
-        letter-spacing: 0;
-        margin: 0;
-        width: 50%;
-    }
     /*contact*/
     #contact-area .main-title{
         margin-top: 10px;
@@ -652,10 +679,17 @@ header, .navbar{
         margin-top: 5%;
     }
 }
-@media(max-width: 376px){
+@media(max-width: 428px){
     /* geral */
     .main-title{
         font-size: 26px;
+    }
+    .navbar-nav a{
+        margin-left: 25%;
+    }
+    .navbar-toggler{
+        padding-right: 40px;
+        border: none;
     }
        /*filter*/
     #portfolio-area .filter-btn{
@@ -675,7 +709,8 @@ header, .navbar{
         font-size: 16px;
     }
     #email-input{
-        width: 90%;
+        max-width: 100%;
+        margin-left: -20%;
     }
     #call-area p, #call-area{
         font-size: 14px;
@@ -683,9 +718,75 @@ header, .navbar{
         margin: 0;
         line-height: 25px;
     }
-    #call-area #call-btn{
-        width: 70%;
+    #call-area{
+        width: 100%;
+        text-align: center;
         margin-top: 10px;
+    }
+    #call-btn{
+        margin-top: 10px;
+        padding-right: 35%;
+        padding-left: 20%;
+    }
+    /*contact*/
+    #contact-area .main-title{
+        margin-top: 10px;
+    }
+    .contact-box{
+        border: none;
+        margin-bottom: 0;
+    }
+    #copy-area{
+        margin-top: 5%;
+    }
+}
+@media(max-width: 360px){
+    /* geral */
+    .main-title{
+        font-size: 26px;
+    }
+    .navbar-nav a{
+        margin-left: 25%;
+    }
+    .carousel-indicators{
+        margin-bottom: -10px;
+    }
+       /*filter*/
+    #portfolio-area .filter-btn{
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .project-box{
+        width: 50%;
+        margin-left: -3px;
+        padding: 0px 10px;
+    }
+    #apply-area p{
+        font-size: 15px;
+        margin-left: 50%;
+    }    
+    /* news */
+    #news-area .main-title{
+        font-size: 26px;
+    }
+    #news-area p{
+        font-size: 16px;
+    }
+    #email-input{
+        max-width: 100%;
+        margin-left: -25%;
+    }
+    #call-area p, #call-area{
+        font-size: 14px;
+        letter-spacing: 0;
+        margin: 0;
+        line-height: 25px;
+        margin-top: 5%;
+    }
+    #call-btn{
+        margin-top: 10px;
+        padding-left: 40px;
+        margin-right: 20px;
     }
     /*contact*/
     #contact-area .main-title{

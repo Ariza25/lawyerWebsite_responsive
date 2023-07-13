@@ -14,7 +14,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 254);
+      var value = Math.round(circle.value() * 20);
       circle.setText(value);
 
     }
@@ -34,7 +34,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 254);
+      var value = Math.round(circle.value() * 20);
       circle.setText(value);
 
     }
@@ -54,7 +54,7 @@ $( document ).ready(function() {
     step: function(state, circle) {
       circle.path.setAttribute('stroke', state.color);
 
-      var value = Math.round(circle.value() * 32);
+      var value = Math.round(circle.value() * 1);
       circle.setText(value);
 
     }
@@ -104,7 +104,7 @@ $( document ).ready(function() {
   //parallax//
 
   setTimeout(function(){
-    $('#data-area').parallax({imageSrc: '/CSS/img/carousel.webp'});
+    $('#data-area').parallax({imageSrc: '/CSS/img/web.jpeg'});
   }, 250);
 
 // Filtro serviços
